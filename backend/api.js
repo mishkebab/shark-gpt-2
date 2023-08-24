@@ -1,4 +1,4 @@
-import { Configuration, OpenAIApi } from "openai";
+import OpenAI from "openai";
 import dotenv from "dotenv";
 dotenv.config();
 
@@ -9,10 +9,8 @@ if (!openaiApiKey) {
     process.exit(1)
 }
 
-const configuration = new Configuration({
+const openai = new OpenAI({
     apiKey: openaiApiKey
 })
-
-const openai = new OpenAIApi(configuration)
 
 export default openai
