@@ -1,18 +1,22 @@
-import express, { query } from "express";
+import express from "express";
 import cors from "cors";
 import generate from "./generate.js";
 import score from "./score.js";
+import fetch from "node-fetch";
+
+// require('dotenv').config();
 
 const app = express();
 
+app.use(express.static('dist'));
 app.use(express.json())
 app.use(cors());
 
 const port = process.env.PORT || 3005;
 
 app.get("/", (req, res) => {
-    res.send("Hello world from our API")
-})
+    res.sendFile(`${__dirname}/dist/index.html`)
+});
 
 app.post("/generate", async (req, res) => {
     const judge = req.body.judge

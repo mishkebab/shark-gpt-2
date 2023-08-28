@@ -6,7 +6,13 @@
   "browserslist": [
     "defaults"
   ],
+  "type": "module",
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
+    "start": "node app.js",
+    "start:debug": "node --inspect app.js",
     "watch": "webpack --watch --mode=development",
     "build": "webpack --mode=production"
   },
@@ -18,8 +24,13 @@
     "@babel/preset-env": "^7.22.10",
     "babel-loader": "^9.1.3",
     "core-js": "^3.32.1",
+    "cors": "^2.8.5",
     "css-loader": "^6.8.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
     "mini-css-extract-plugin": "^2.7.6",
+    "node-fetch": "^3.3.2",
+    "openai": "^4.3.0",
     "regenerator-runtime": "^0.14.0",
     "sass": "^1.66.1",
     "sass-loader": "^13.3.2",

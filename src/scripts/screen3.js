@@ -58,7 +58,7 @@ export function renderScreen3(pitch, category, renderScreen4) {
     
     const generateResponse = async(judge) => {
       console.log(judge)
-      const response = await fetch("http://localhost:3005/generate", {
+      const response = await fetch("/generate", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -72,7 +72,7 @@ export function renderScreen3(pitch, category, renderScreen4) {
 
     const generateScore = async(judge, tweet) => {
       console.log(judge)
-      const response = await fetch("http://localhost:3005/score", {
+      const response = await fetch("/score", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -86,14 +86,12 @@ export function renderScreen3(pitch, category, renderScreen4) {
 
     const allJudgeResponses = async() => {
       elon = await generateResponse("Elon Musk");
-      console.log(elon)
       beyonce = await generateResponse("Beyonce");
       warren = await generateResponse("Warren Buffett");
       mark = await generateResponse("Mark Cuban");
       serena = await generateResponse("Serena Williams");
 
       elon_score = await generateScore("Elon Musk", elon) 
-      console.log(elon_score)
       beyonce_score = await generateScore("Beyonce", beyonce)  
       warren_score = await generateScore("Warren Buffett", warren)  
       mark_score = await generateScore("Mark Cuban", mark)

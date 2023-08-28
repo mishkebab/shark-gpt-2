@@ -1,3 +1,4 @@
+
 export function renderScreen4(elon, elon_score, beyonce, beyonce_score, warren, warren_score, mark, mark_score, serena, serena_score, pitch) {
     const canvasEl = document.getElementById("game-canvas");
     const ctx = canvasEl.getContext("2d");
@@ -13,21 +14,21 @@ export function renderScreen4(elon, elon_score, beyonce, beyonce_score, warren, 
     }
   
     const elon_image = new Image();
-    elon_image.src = "./assets/screen4/elon-musk-png-image.png"
+    elon_image.src = "../../assets/screen4/elon-musk-png-image.png"
   
     elon_image.onload = function() {
       ctx.drawImage(elon_image, 100, 50, 250, 250)
     }
     
     const beyonce_image = new Image();
-    beyonce_image.src = "./assets/screen4/beyonce-png-image.png"
+    beyonce_image.src = "../assets/screen4/beyonce-png-image.png"
   
     beyonce_image.onload = function() {
       ctx.drawImage(beyonce_image, 420, 50, 250, 250)
     }
   
     const warren_image = new Image();
-    warren_image.src = "./assets/screen4/warren-png-image.png"
+    warren_image.src = "../../../assets/screen4/warren-png-image.png"
   
     warren_image.onload = function() {
       ctx.drawImage(warren_image, 800, 50, 230, 230)
