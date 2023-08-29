@@ -38,9 +38,10 @@ app.post("/score", async (req, res) => {
     const category = req.body.category
     const auto_pitch = req.body.auto_pitch
     const pitch = req.body.pitch
+    const tweet = req.body.tweet
 
     try {
-        const sqlQuery = await score(judge, category, auto_pitch, pitch)
+        const sqlQuery = await score(judge, category, auto_pitch, pitch, tweet)
         res.json({ response: sqlQuery })
     } catch (error) {
         console.error(error)

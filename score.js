@@ -1,6 +1,8 @@
 import openaiClient from "./api.js"
 
 const score = async (judge, category, auto_pitch, pitch, tweet) => {
+    console.log("tweet2", tweet)
+
     const response = await openaiClient.chat.completions.create({
         model: "gpt-3.5-turbo",
         messages: [
