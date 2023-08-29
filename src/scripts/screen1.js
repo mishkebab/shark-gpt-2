@@ -11,6 +11,13 @@ export function renderScreen1(canvasEl, ctx, renderScreen2, renderScreen3, rende
       const element = elements[i];
       element.style.display = "block"
     }
+
+    // const elon_image = new Image();
+    // elon_image.src = "/src/assets/screen4/beyonce-png-image.png"
+
+    // elon_image.onload = function() {
+    //   ctx.drawImage(elon_image, 100, 50, 250, 250)
+    // }
   
     document.getElementById("consumer").addEventListener("click", function() {
       const category = document.getElementById("consumer").id

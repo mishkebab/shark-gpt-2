@@ -13,35 +13,35 @@ export function renderScreen4(elon, elon_score, beyonce, beyonce_score, warren, 
     }
   
     const elon_image = new Image();
-    elon_image.src = "../assets/screen4/elon-musk-png-image.png"
-  
+    elon_image.src = "/assets/screen4/elon-musk-png-image.png"
+
     elon_image.onload = function() {
       ctx.drawImage(elon_image, 100, 50, 250, 250)
     }
     
     const beyonce_image = new Image();
-    beyonce_image.src = "../assets/screen4/beyonce-png-image.png"
+    beyonce_image.src = "/assets/screen4/beyonce-png-image.png"
   
     beyonce_image.onload = function() {
       ctx.drawImage(beyonce_image, 420, 50, 250, 250)
     }
   
     const warren_image = new Image();
-    warren_image.src = "../../../assets/screen4/warren-png-image.png"
+    warren_image.src = "/assets/screen4/warren-png-image.png"
   
     warren_image.onload = function() {
       ctx.drawImage(warren_image, 800, 50, 230, 230)
     }
   
     const mark_image = new Image();
-    mark_image.src = "./assets/screen4/mark-cuban-png.png"
+    mark_image.src = "/assets/screen4/mark-cuban-png.png"
   
     mark_image.onload = function() {
       ctx.drawImage(mark_image, 1110, 50, 300, 230)
     }
   
     const serena_image = new Image();
-    serena_image.src = "./assets/screen4/serena-williams-png.png"
+    serena_image.src = "/assets/screen4/serena-williams-png.png"
   
     serena_image.onload = function() {
       ctx.drawImage(serena_image, 1420, 0, 300, 370)
