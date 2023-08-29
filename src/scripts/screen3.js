@@ -81,6 +81,7 @@ export function renderScreen3(pitch, category, renderScreen4) {
       });
 
       const data = await response.json()
+      console.log(data.response)
       return data.response
     };
 

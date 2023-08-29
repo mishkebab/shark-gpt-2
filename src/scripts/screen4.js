@@ -1,4 +1,3 @@
-
 export function renderScreen4(elon, elon_score, beyonce, beyonce_score, warren, warren_score, mark, mark_score, serena, serena_score, pitch) {
     const canvasEl = document.getElementById("game-canvas");
     const ctx = canvasEl.getContext("2d");
@@ -14,7 +13,7 @@ export function renderScreen4(elon, elon_score, beyonce, beyonce_score, warren, 
     }
   
     const elon_image = new Image();
-    elon_image.src = "../../assets/screen4/elon-musk-png-image.png"
+    elon_image.src = "../assets/screen4/elon-musk-png-image.png"
   
     elon_image.onload = function() {
       ctx.drawImage(elon_image, 100, 50, 250, 250)

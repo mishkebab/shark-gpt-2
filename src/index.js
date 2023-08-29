@@ -1,7 +1,7 @@
-import { renderScreen1 } from "./scripts/screen1";
-import { renderScreen2 } from "./scripts/screen2";
-import { renderScreen3 } from "./scripts/screen3";
-import { renderScreen4 } from "./scripts/screen4";
+import { renderScreen1 } from "./scripts/screen1.js";
+import { renderScreen2 } from "./scripts/screen2.js";
+import { renderScreen3 } from "./scripts/screen3.js";
+import { renderScreen4 } from "./scripts/screen4.js";
 
 const canvasEl = document.getElementById("game-canvas");
 const ctx = canvasEl.getContext("2d");
